@@ -1,5 +1,8 @@
 # SingleFileGPT.java
 
+[![CI: SingleFileGPT Selftest](https://github.com/eyeoverthink/singlefile-gpt/actions/workflows/ci.yml/badge.svg)](https://github.com/eyeoverthink/singlefile-gpt/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 A complete decoder-only transformer language model in **one pure Java file** — zero dependencies, zero build step, no `java.util.Random` (deterministic SplitMix64 PRNG), hand-derived backpropagation for every op verified against central finite differences, byte-level GPT-2 BPE, weight-only `int8` & BitNet-style ternary QAT, byte-resident inference, and a persistent spin-wait thread pool.
 
 > **< 10-Second Verification (0 GPU, 0 Maven/Gradle, JDK 17+):**
